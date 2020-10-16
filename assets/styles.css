@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  background: #fff;
+  display: flex;
+  border: 1px solid black;
+  height: 80px;
+  width: 100%;
+  padding: 0 10%;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+
+header .logo a{
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+header .menu {
+  display: flex;
+}
+
+header .menu a{
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+header .menu .link {
+  padding: 20px;
+}
+
+header .menu .dropdown {
+  position: relative;
+}
+
+header .menu .dropdown:hover .sub-menu, header .menu .dropdown .sub-menu:hover{
+  display: block;
+}
+
+header .menu .dropdown .sub-menu{
+  display: none;
+  position: absolute;
+  transform: translate3d(0, 10px, 0);
+  /* padding: 20px; */
+  background: black;
+  color: red;
+  min-width: 150px;
+  border-radius: 3px;
+}
+
+header .menu .dropdown .sub-menu a{
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+/* .hero-image {
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+} */
+
+.hero-image {
+  height: 75vh;
+  width: 100%;
+}
+
+.hero-image .hero{
+  background: url("rsz_1rsz_1twodivs-1.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section {
+  height: 60%;
+}
