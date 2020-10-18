@@ -227,18 +227,16 @@ footer .social-icons a:hover{
 #mobile-menu .logo a{
   color: white;
   text-transform: uppercase;
-  border: 1px solid red;
 }
 
 .close-mobile-menu{
   height: 50px;
   width: 50px;
-   background: red;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  color: black;
+  color: white;
   position: absolute;
   right: 0;
   top: -5px;
@@ -251,7 +249,7 @@ footer .social-icons a:hover{
 }
 
 #mobile-menu .menu > li > a{
-  color: black;
+  color: white;
   font-size: 1.2rem;
   display: block;
   /* border-bottom: 1px solid white; */
@@ -261,7 +259,7 @@ footer .social-icons a:hover{
 }
 
 #mobile-menu .menu > li.dropdown .sub-menu a{
-  color: black;
+  color: white;
   font-size: 1.2rem;
   display: inline-block;
   border-bottom: none;
@@ -269,24 +267,12 @@ footer .social-icons a:hover{
 }
 
 @media (min-width: 1px) and (max-width: 575px) {
-  header{
-    display: flex;
-    align-items: center;
-    border: 1px solid red;
-    width: 100%;
+  .menu.mobile{
+    position: relative;
   }
-  header .logo{
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  header .logo a{
-    display: block;
-  }
-  .hero-image {
-    border: 1px solid red;
+  .open-mobile-menu{
+    position: absolute;
+    right: 0;
+    top: -25px;
   }
 }
